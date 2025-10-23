@@ -38,12 +38,38 @@ The model relies heavily on the **inverse relationship between Humidity and Temp
 - Scikit-learn (for splitting and metrics)
 - Matplotlib, Seaborn (for visualization)
 
+## How to Get Started
+
+### Prerequisites
+
+Ensure you have **Python 3.9+** installed on your system.
+
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/Tech-star2004/Temperature-prediction-using-humidity-Data.git](https://github.com/Tech-star2004/Temperature-prediction-using-humidity-Data.git)
+    cd Temperature-prediction-using-humidity-Data
+    ```
+2.  **Install Dependencies:**
+    It is recommended to use a virtual environment. Install all required libraries using `pip`:
+    ```bash
+    pip install pandas numpy xgboost scikit-learn matplotlib seaborn jupyter
+    ```
+
+## Running the Project
+
+The entire workflow, including data loading, preprocessing, training, and evaluation, is contained within the Jupyter Notebook.
+
+1.  **Start Jupyter:**
+    ```bash
+    jupyter notebook
+    ```
+2.  **Run the Notebook:**
+    Open the file `Temperature Prediction_Test.ipynb` in your browser and run all cells.
+
 ## Future Work
 Based on the diagnostic phase, the immediate next steps to achieve sub-2.0 $\text{RMSE}$ performance are:
 1.  **Outlier Removal:** Implement an aggressive data cleaning step to filter out records where humidity is $\approx 0\%$ or $\approx 100\%$ and the temperature value is highly suspicious (e.g., manually verifying sensor errors).
 2.  **Hyperparameter Tuning:** Use `GridSearchCV` or `RandomizedSearchCV` to optimize the `max_depth` and `n_estimators` for the XGBoost model.
 
-## How to Run the Project
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/Tech-star2004/Temperature-prediction-using-humidity-Data.git
